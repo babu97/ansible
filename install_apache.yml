@@ -23,12 +23,12 @@
     when: ansible_distribution == "Ubuntu"
 
   - name: update repository index
-    dnf:
+    yum:
      update_cache: yes
     when: ansible_distribution_version == "RedHat"
 
   - name: install apache2 package
-    dnf:
+    yum:
      name:
        - httpd
        - libapache2-mod-php

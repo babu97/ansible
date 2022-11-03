@@ -23,8 +23,9 @@
 Gather facts, while limiting to a single host
  ansible all -m gather_facts --limit 172.16.250.248
 install_apache.yml (updated to include centos)
- ---
- 
+
+
+---
  - hosts: all
    become: true
    tasks:

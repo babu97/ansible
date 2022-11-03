@@ -32,7 +32,9 @@
      name:
        - httpd
        - libapache2-mod-php
-     state: latest
+     state:
+       - started
+       - latest
     when: ansible_distribution_version == "RedHat"
 
   
